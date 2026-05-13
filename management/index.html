@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskForge | Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="TaskForge logo" />
+        <span>TaskForge</span>
+      </a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#tasks">Demo</a>
+        <a href="#github">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Task management application</p>
+          <h1>Manage tasks with a focused, responsive command board.</h1>
+          <p>
+            Create, track, filter, and complete work from one clean website.
+            This static version is simple to run and easy to push to GitHub.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#tasks">Try demo</a>
+            <a class="button secondary" href="#features">View features</a>
+          </div>
+        </div>
+
+        <section class="summary-panel" aria-label="Task summary">
+          <div>
+            <span>Total</span>
+            <strong id="totalCount">3</strong>
+          </div>
+          <div>
+            <span>Open</span>
+            <strong id="openCount">2</strong>
+          </div>
+          <div>
+            <span>Done</span>
+            <strong id="doneCount">1</strong>
+          </div>
+        </section>
+      </section>
+
+      <section class="features" id="features">
+        <article>
+          <span>01</span>
+          <h2>User Authentication</h2>
+          <p>Designed for login and protected account workflows.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h2>Task CRUD</h2>
+          <p>Create, read, update, and delete tasks from the board.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h2>Progress Tracking</h2>
+          <p>Live counters show total, open, and completed work.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h2>Smart Filters</h2>
+          <p>Switch between all, open, and done tasks.</p>
+        </article>
+        <article>
+          <span>05</span>
+          <h2>Responsive Design</h2>
+          <p>Works neatly on laptop, tablet, and mobile screens.</p>
+        </article>
+      </section>
+
+      <section class="task-demo" id="tasks">
+        <div class="section-title">
+          <p class="eyebrow">Interactive demo</p>
+          <h2>Task board</h2>
+        </div>
+
+        <form class="task-form" id="taskForm">
+          <input id="taskTitle" type="text" placeholder="Add a task title" required />
+          <input id="taskNote" type="text" placeholder="Add a short note" />
+          <button type="submit">Add Task</button>
+        </form>
+
+        <div class="filters" aria-label="Task filters">
+          <button class="filter active" data-filter="all" type="button">All</button>
+          <button class="filter" data-filter="open" type="button">Open</button>
+          <button class="filter" data-filter="done" type="button">Done</button>
+        </div>
+
+        <div class="task-list" id="taskList"></div>
+      </section>
+
+      <section class="github-note" id="github">
+        <h2>Ready for GitHub</h2>
+        <p>
+          This folder uses a simple structure: HTML, CSS, JavaScript, one image
+          folder, and a README. Push the <strong>management</strong> folder to GitHub.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>TaskForge Management Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
